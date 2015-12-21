@@ -1,0 +1,9 @@
+* 
+
+https://github.com/yeoman/generator-angular
+
+#+BEGIN_SRC
+npm install -g grunt-cli bower yo generator-karma generator-angular
+mkdir my-new-project && cd $_
+yo angular t1
+#+END_SRC
