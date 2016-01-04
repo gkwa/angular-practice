@@ -1,0 +1,21 @@
+* Pro AngularJS Book source code
+
+Dropbox/Taylor/Book_Pro_AngularJS_Source
+
+* Book URLs
++ http://www.apress.com/9781430264484
++ http://www.apress.com/downloadable/download/sample/sample_id/1527/
+
+* AngularJS source
++ https://angularjs.org/
++ https://github.com/angular/angular.js.git
+
+* Getting setup
+
+#+BEGIN_SRC
+bower install angular#1.4.8
+# or
+npm install angular@1.4.8
+sudo npm install -g karma connect
+mkdir angularjs
+#+END_SRC
