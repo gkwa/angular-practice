@@ -7,8 +7,14 @@ Dropbox/Taylor/Book_Pro_AngularJS_Source
 + http://www.apress.com/downloadable/download/sample/sample_id/1527/
 
 * AngularJS source
-+ https://angularjs.org/
 + https://github.com/angular/angular.js.git
+
+* AngularJS source
++ https://angularjs.org/
+#+BEGIN_SRC
+curl -o Book_Pro_AngularJS_Source.zip http://www.apress.com/downloadable/download/sample/sample_id/1527
+7z x -oBook_Pro_AngularJS_Source Book_Pro_AngularJS_Source.zip
+#+END_SRC
 
 * Getting setup
 

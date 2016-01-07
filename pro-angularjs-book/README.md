@@ -5,6 +5,7 @@
 - [Pro AngularJS Book source code](#pro-angularjs-book-source-code)
 - [Book URLs](#book-urls)
 - [AngularJS source](#angularjs-source)
+- [AngularJS source](#angularjs-source-1)
 - [Getting setup](#getting-setup)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -23,8 +24,17 @@ Book URLs
 AngularJS source
 ================
 
--   <https://angularjs.org/>
 -   <https://github.com/angular/angular.js.git>
+
+AngularJS source
+================
+
+-   <https://angularjs.org/>
+
+<!-- -->
+
+    curl -o Book_Pro_AngularJS_Source.zip http://www.apress.com/downloadable/download/sample/sample_id/1527
+    7z x -oBook_Pro_AngularJS_Source Book_Pro_AngularJS_Source.zip
 
 Getting setup
 =============
