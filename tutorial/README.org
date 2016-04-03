@@ -1,0 +1,44 @@
+* Getting started tutorial
+https://docs.angularjs.org/tutorial/step_00
+
+* Setup dev env
+
+https://docs.angularjs.org/tutorial
+https://github.com/angular/angular-phonecat.git
+https://github.com/angular/angular-seed
+
+Out of band fork angular-phonecat to my github
+
+git clone https://github.com/angular/angular-phonecat.git
+
+# manually delete angular-phonecat repository from github
+git fork github/angular/angular-phonecat.git # this really runs hub fork..., git is aliased here
+
+#+BEGIN_SRC
+cd /tmp
+rm -rf /tmp/angular-phonecat
+git clone --depth=14 https://github.com/angular/angular-phonecat.git /tmp/angular-phonecat
+cd /tmp/angular-phonecat
+git fork # this runs Hub and creates fork https://github.com/TaylorMonacelli/angular-phonecat
+cd $(git rev-parse --show-toplevel)
+git submodule add https://github.com/TaylorMonacelli/angular-phonecat.git tutorial/angular-phonecat
+cd tutorial/angular-phonecat
+# Show the git tags, with this we can compare different steps in tutorial, eg step-0 to step-1
+# https://github.com/angular/angular-phonecat#step-0
+git tag -l
+npm install
+
+# start at step-0 
+# https://docs.angularjs.org/tutorial/step_00
+git checkout -f step-0
+
+# open one terminal and start server
+npm start
+open http://localhost:8000/app/index.html
+
+# open another terminal and start test, leave it running for instant feedback
+npm test
+
+# run end-to-end test
+npm run protractor
+#+END_SRC
